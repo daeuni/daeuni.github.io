@@ -16,7 +16,7 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Junior DevOps Engineer
-  tagline: Developer. DevOps.
+  tagline: Developer. Daeun Kim.
   date_format: "%b %-d, %Y"
   style: blue
   showNav: false
