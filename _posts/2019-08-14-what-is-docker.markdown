@@ -7,7 +7,9 @@ date:   2019-08-14 14:27:36
 도커(Docker)는 컨테이너형 가상화 기술을 구현하기 위한 상주 애플리케이션(dockered라는 데몬)과 이 애플리케이션을 조작하기 위한 명령행 도구(CLI)로 구성되는 프로덕트다.  애플리케이션 배포에 특화돼 있기 때문에 애플리케이션 개발 및 운영을 컨테이너 중심으로 할 수 있다.
 
 <center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/dockerImage.png?raw=true"></center> 
-
+<br>
+<hr>
+<br>
 - **도커의 장점**
 
   1) 도커는 조작이 간편하고 경량 컨테이너라는 장점 때문에 도커는 로컬 머신의 개발 환경 구축에 널리 사용된다.
@@ -82,14 +84,14 @@ date:   2019-08-14 14:27:36
    CMD ["helloworld"]
    ```
 
-<br>
+
 <hr>
 <img src = "https://github.com/daeuni/daeuni.github.io/blob/master/tagtable.JPG?raw=true">
 <br>
 <hr>
 <br>
 
-   이 Dockerfile을 사용해 이미지를 빌드하고 실행하자. Dockerfile이 있는 폴더에서 docker image build명령을 실행한다  
+   이제 Dockerfile을 사용해 이미지를 빌드하고 실행하자. Dockerfile이 있는 폴더에서 docker image build명령을 실행한다  
 
    ```dockerfile
    $docker image build -t helloworld:latest .
