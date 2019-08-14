@@ -4,9 +4,9 @@ title:  "What is Docker?"
 date:   2019-08-14 14:27:36
 ---
 
-도커(Docker)는 컨테이너형 가상화 기술을 구현하기 위한 상주 애플리케이션(dockered라는 데몬)과 이 애플리케이션을 조작하기 위한 명령행 도구(CLI)로 구성되는 프로덕트다. 애플리케이션 **배포**에 특화돼 있기 때문에 애플리케이션 개발 및 운영을 **컨테이너 중심**으로 할 수 있다.
+도커(Docker)는 컨테이너형 가상화 기술을 구현하기 위한 상주 애플리케이션(dockered라는 데몬)과 이 애플리케이션을 조작하기 위한 명령행 도구(CLI)로 구성되는 프로덕트다.  애플리케이션 배포에 특화돼 있기 때문에 애플리케이션 개발 및 운영을 컨테이너 중심으로 할 수 있다.
 
-![dockerIm](C:\Users\Daeun\Pictures\Tech Blog\dockerImage.png)
+![dockerIm](https://drive.google.com/file/d/1ttWMrPTlUWMeVvGw1jG2bB-dCs4nWPsr/view?usp=sharing){:.aligncenter}  
 
 - **도커의 장점**
 
@@ -18,7 +18,7 @@ date:   2019-08-14 14:27:36
 
   4) 이식성이 뛰어나다.
 
-  5) 컨테이너 간의 연동 및 클라우드 플랫폼 지원 등 여러 면에서 장점이 있다.
+  5) 컨테이너 간의 연동 및 클라우드 플랫폼 지원 등 여러 면에서 장점이 있다.    
 
 
 
@@ -28,7 +28,7 @@ date:   2019-08-14 14:27:36
 
   조금 더 엄밀한 리눅스 계열 운영체제의 동작이 요구되는 가상 환경을 구축해야 한다면 기존 방법대로 VMWare나 VirtualBox같은 가상화 소프트웨어를 사용하는 것이 낫다.
 
-  단지, 도커는 애플리케이션을 배포하는 목적에 특화된 박스라고 생각하는 편이 좋다.
+  단지, 도커는 애플리케이션을 배포하는 목적에 특화된 박스라고 생각하는 편이 좋다.    
 
 
 
@@ -44,7 +44,9 @@ date:   2019-08-14 14:27:36
 
 
 
-![container](C:\Users\Daeun\Pictures\Tech Blog\container.png)
+![container](https://drive.google.com/file/d/1eOeL1Y4wVABiiCViBOyQl1_iVKuxxA_v/view?usp=sharing){:.aligncenter}
+
+  
 
 
 
@@ -79,27 +81,27 @@ date:   2019-08-14 14:27:36
 
    ------
 
-   FROM : 컨테이너의 우너형 역할을 할 도커 이미지(운영체제)를 정의한다. 여기서는 우분투 토커 이미지를 지정한다.
-   COPY :  방금 작성한 shell script file(helloworld)을 도커 컨테이너 안의 /usr/local/bin에 복사하라고 정의한다.
-   RUN : 도커 컨테이너 안에서 어떤 명령을 수행하기 위한 것으로 helloworld script에 실행 권한을 부여하기 위해 사용한다. 여기까지가 도커 빌드 과정에서 실행되며 그 결과 새로운 이미지가 만들어진다.
+   FROM : 컨테이너의 우너형 역할을 할 도커 이미지(운영체제)를 정의한다. 여기서는 우분투 토커 이미지를 지정한다.  
+   COPY :  방금 작성한 shell script file(helloworld)을 도커 컨테이너 안의 /usr/local/bin에 복사하라고 정의한다.  
+   RUN : 도커 컨테이너 안에서 어떤 명령을 수행하기 위한 것으로 helloworld script에 실행 권한을 부여하기 위해 사용한다. 여기까지가 도커 빌드 과정에서 실행되며 그 결과 새로운 이미지가 만들어진다.  
    CMD : 완성된 이미지를 도커 컨테이너로 실행하기 '전'에 먼저 실행할 명령을 정의한다. 여기서는 사실상 애플리케이션을 실행하는 명령을 지정했다.
 
    ------
 
-   이 Dockerfile을 사용해 이미지를 빌드하고 실행하자. Dockerfile이 있는 폴더에서 docker image build명령을 실행한다
+   이 Dockerfile을 사용해 이미지를 빌드하고 실행하자. Dockerfile이 있는 폴더에서 docker image build명령을 실행한다  
 
    ```dockerfile
    $docker image build -t helloworld:latest .
    Sending build context to Docker daemon 97.5MB
    ```
 
-   빌드가 끝난 다음 docker container run 명령으로 도커 컨테이너를 실행하는 것이 기본 사용법이다.
+   빌드가 끝난 다음 docker container run 명령으로 도커 컨테이너를 실행하는 것이 기본 사용법이다.  
 
    ```dockerfile
    $docker container run helloworld:latest
    Hello, World!
    ```
-
+  
    이런 방식으로 도커 이미지에 애플리케이션에 필요한 파일을 운영체제와 함께 담아 컨테이너 형태로 실행하는 것이 기본적인 스타일이며 본 예제는 셸 스크립트를 우분투 운영체제와 함께 컨테이너로 실행한 것이다.
 
 
@@ -112,6 +114,6 @@ date:   2019-08-14 14:27:36
 
    예를들어 Node.js 웹 애플리케이션을 배포 대상으로 하는 상황에서 애플리케이션은 계속 실행된 상태로 남아있다. 애플리케이션이 의존하는 Node.js 버전의 기반 이미지를 이용하되, npm으로 모듈을 추가설치하거나 애플리케이션 빌드를 컨테이너 안에서 수행해 이미지를 만든다.
 
-   완성된 이미지는 도커가 실행되는 환경이라면 어떤 환경에서도 실행할 수 있으며 호스트 운영체제에 Node.js나 npm을 설치할 필요가 전혀 없다 !!
+   완성된 이미지는 도커가 실행되는 환경이라면 어떤 환경에서도 실행할 수 있으며 호스트 운영체제에 Node.js나 npm을 설치할 필요가 전혀 없다 !!  
 
-   실제 사용 예와는 조금 차이가 있지만, 지금까지의 설명으로 그럭저럭 도커를 어떻게 사용하는지 감을 잡고 더 실용적이 도커 사용법은 다음 포스트에 계속 이어나갈 예정이다.
+실제 사용 예와는 조금 차이가 있지만, 지금까지의 설명으로 그럭저럭 도커를 어떻게 사용하는지 감을 잡고 더 실용적이 도커 사용법은 다음 포스트에 계속 이어나갈 예정이다.
