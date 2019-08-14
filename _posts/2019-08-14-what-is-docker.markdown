@@ -6,7 +6,7 @@ date:   2019-08-14 14:27:36
 
 도커(Docker)는 컨테이너형 가상화 기술을 구현하기 위한 상주 애플리케이션(dockered라는 데몬)과 이 애플리케이션을 조작하기 위한 명령행 도구(CLI)로 구성되는 프로덕트다.  애플리케이션 배포에 특화돼 있기 때문에 애플리케이션 개발 및 운영을 컨테이너 중심으로 할 수 있다.
 
-![dockerIm](https://github.com/daeuni/daeuni.github.io/blob/master/assets/dockerImage.png?raw=true){:.aligncenter}  
+<center>![dockerIm](https://github.com/daeuni/daeuni.github.io/blob/master/assets/dockerImage.png?raw=true)</center> 
 
 - **도커의 장점**
 
@@ -33,7 +33,7 @@ date:   2019-08-14 14:27:36
 
 <br>
 <br>
-1> **컨테이너형 가상화 기술**
+**[1] 컨테이너형 가상화 기술**
 
    도커는 컨테이너형 가상화 기술(운영 체제 수준 가상화: Operating-system-level virtualization)을 사용한다.
 
@@ -44,14 +44,14 @@ date:   2019-08-14 14:27:36
    "<u>컨테이너형 가상화 기술을 사용해서 컨테이너를 쉽게 만들고 쉽게 버릴 수 있다는 점이 도커의 주요 특징 중 하나다.</u>"
 
 
-
+<center>
 ![container](https://github.com/daeuni/daeuni.github.io/blob/master/assets/container.png?raw=true)
-
+</center>
   
 
 
 <br>
-2> **도커 스타일 체험하기**
+**[2] 도커 스타일 체험하기**
 
    설명만으로는 애플리케이션과 실행 환경을 함께 배포하는 도커 스타일의 배포 방식이 잘 이해되지 않을 수도 있다. 
 
@@ -107,7 +107,7 @@ date:   2019-08-14 14:27:36
 
 
 <br>
-3> **실용적인 예제**
+**[3] 실용적인 예제**
 
    2번의 예제는 echo명령을 실행하고 종료된다.
 
