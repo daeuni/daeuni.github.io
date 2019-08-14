@@ -6,7 +6,7 @@ date:   2019-08-14 14:27:36
 
 도커(Docker)는 컨테이너형 가상화 기술을 구현하기 위한 상주 애플리케이션(dockered라는 데몬)과 이 애플리케이션을 조작하기 위한 명령행 도구(CLI)로 구성되는 프로덕트다.  애플리케이션 배포에 특화돼 있기 때문에 애플리케이션 개발 및 운영을 컨테이너 중심으로 할 수 있다.
 
-![dockerIm](./assets/dockerImage.png){:.aligncenter}  
+![dockerIm](../assets/dockerImage.png){:.aligncenter}  
 
 - **도커의 장점**
 
@@ -44,7 +44,7 @@ date:   2019-08-14 14:27:36
 
 
 
-![container](./assets/container.png}
+![container](../assets/container.png}
 
   
 
