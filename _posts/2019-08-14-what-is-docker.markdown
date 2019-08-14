@@ -81,7 +81,7 @@ date:   2019-08-14 14:27:36
    ```
 
 <br>
-<hr>
+
 | <center>TAG</center> | <center>Description</center> |
 |:--------:|:--------|
 | <center>FROM</center> | 컨테이너의 운영 역할을 할 도커 이미지(운영체제)를 정의 |
@@ -89,7 +89,7 @@ date:   2019-08-14 14:27:36
 | <center>RUN</center> | 도커 컨테이너 안에서 어떤 명령을 수행하기 위한 것으로 helloworld script에 실행 권한을 부여하기 위해 사용. 여기까지가 도커 빌드 과정에서 실행되며 그 결과 새로운 이미지가 만들어짐 |
 | <center>CMD</center> | 완성된 이미지를 도커 컨테이너로 실행하기 ‘전'에 먼저 실행할 명령을 정의. 여기서는 사실상 애플리케이션을 실행하는 명령을 지정 |
 <br>
-<hr>
+
 <br>
 
    이 Dockerfile을 사용해 이미지를 빌드하고 실행하자. Dockerfile이 있는 폴더에서 docker image build명령을 실행한다  
