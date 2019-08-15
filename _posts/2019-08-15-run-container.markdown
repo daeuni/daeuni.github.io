@@ -101,8 +101,6 @@ boot  etc  lib   media  opt  root  sbin  sys  usr
 
 두번째 실행할 컨테이너는 MySQL 서버이다. 가장 흔하게 사용하는 데이터베이스로 `-e` 옵션을 이용하여 환경변수를 설정하고 `--name` 옵션을 이용하여 컨테이너에 읽기 어려운 ID 대신 쉬운 이름을 부여할 예정이다.
 
-> --name`옵션을 생략하면 도커가 자동으로 이름을 지어 줍니다. 이름은 유명한 과학자나 해커의 이름과 수식어를 조합하여 랜덤으로 [생성](https://github.com/docker/docker/blob/master/pkg/namesgenerator/names-generator.go)니다. (ex - boring_wozniak) 우리나라 과학자 [장영실](https://github.com/docker/docker/issues/8996)도 등록되어 있다.
-
 [MySQL Docker hub](https://hub.docker.com/_/mysql/) 페이지에 접속하면 간단한 사용법과 환경변수에 대한 설명이 있다. 여러가지 설정값이 있는데 패스워드 없이 root계정을 만들기 위해 `MYSQL_ALLOW_EMPTY_PASSWORD` 환경변수를 설정한다. 그리고 컨테이너의 이름은 `mysql`로 할당하고 백그라운드 모드로 띄우기 위해 `-d` 옵션을 줍니다. 포트는 `3306포트`를 호스트에서 그대로 사용하려고 한다.
 
 ```shell
