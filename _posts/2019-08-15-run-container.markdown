@@ -35,7 +35,7 @@ Server:
 
 기본 값이 도커 서버의 소켓을 바라보고 있기 때문에 사용자는 의식하지 않고 마치 바로 명령을 내리는 것 같은 느낌을 받는다. 이러한 설계가 mac이나 windows의 터미널에서 명령을 입력했을 때 가상 서버에 설치된 도커가 동작하는 이유이다.
 
-![1565833789454](C:\Users\Daeun\AppData\Roaming\Typora\typora-user-images\1565833789454.png)
+<center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/clientserver.png?raw=true"></center> 
 
 <br>
 
@@ -57,22 +57,11 @@ docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 
 다음은 자주 사용하는 옵션이다.
 
-| 옵션  | 설명                                                    |
-| ----- | ------------------------------------------------------- |
-| -d    | detached mode, 백그라운드 모드                          |
-| -p    | 호스트와 컨테이너의 포트 연결 (포워딩)                  |
-| -v    | 호스트와 컨테이너의 디렉토리 연결 (마운트)              |
-| -e    | 컨테이너 내에서 사용할 환경변수 설정                    |
-| -name | 컨테이너 이름 설정                                      |
-| -rm   | 프로세스 종료시 컨테이너 자동 제거                      |
-| -it   | -i와 -t를 동시에 사용한 것으로, 터미널 입력을 위한 옵션 |
-| -link | 컨테이너 연결 [컨테이너명:별칭]                         |
+<img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/optiontable.PNG?raw=true">
 
 <br>
 
-1) ubuntu 16.04 container
-
-<br>
+**1) ubuntu 16.04 container**
 
 ```shell
 docker run ubuntu:16.04
@@ -108,9 +97,7 @@ boot  etc  lib   media  opt  root  sbin  sys  usr
 
 <br>
 
-2) MySQL 5.7 container
-
-<br>
+**2) MySQL 5.7 container**
 
 두번째 실행할 컨테이너는 MySQL 서버이다. 가장 흔하게 사용하는 데이터베이스로 `-e` 옵션을 이용하여 환경변수를 설정하고 `--name` 옵션을 이용하여 컨테이너에 읽기 어려운 ID 대신 쉬운 이름을 부여할 예정이다.
 
@@ -145,9 +132,7 @@ mysql> quit
 
 <br>
 
-3) tensorflow
-
-<br>
+**3) tensorflow**
 
 [tensorflow](https://www.tensorflow.org/)는 손쉽게 머신러닝을 할 수 있는 툴이다. tensorflow는 python으로 만들어져 python과 관련 패키지를 설치해야한다. 이번에 설치하는 이미지는 python과 함께 numpy, scipy, pandas, jupyter, scikit-learn, gensim, BeautifulSoup4, Tensorflow가 설치되어 있다. 뭔가 복잡해 보이지만 도커라면 손쉽게 실행해 볼 수 있다.
 
@@ -157,7 +142,7 @@ docker run -d -p 8888:8888 -p 6006:6006 teamlab/pydata-tensorflow:0.1
 
 설치된 파일이 많아 다운로드 하는데 시간이 좀 걸린다. 컨테이너가 실행되면 웹 브라우저에서 jupyter에 접속하여 머신러닝을 시작해 보자!
 
-![1565835103341](C:\Users\Daeun\AppData\Roaming\Typora\typora-user-images\1565835103341.png)
+<center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/tensorflow.PNG?raw=true"></center> 
 
 여기까지 ubuntu, MySQL, tensorflow를 실행해보았다. 가상머신을 이용해 동일한 작업을 한다면 컴퓨터가 엄청 버벅이겠지만 컨테이너 기반의 도커를 이용하여 매우 가볍게 실행하고 있다. 
 
@@ -165,11 +150,7 @@ docker run -d -p 8888:8888 -p 6006:6006 teamlab/pydata-tensorflow:0.1
 
 <hr>
 
-<br>
-
 다음으로는 내가 만든 애플리케이션을 컨테이너로 실행해서 배포하는 과정을 해보도록 하겠다.
-
-<br>
 
 <hr>
 
