@@ -35,7 +35,7 @@ Server:
 
 기본 값이 도커 서버의 소켓을 바라보고 있기 때문에 사용자는 의식하지 않고 마치 바로 명령을 내리는 것 같은 느낌을 받는다. 이러한 설계가 mac이나 windows의 터미널에서 명령을 입력했을 때 가상 서버에 설치된 도커가 동작하는 이유이다.
 
-<center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/clientserver.png?raw=true"></center> 
+<center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/clientserver_.png?raw=true"></center> 
 
 <br>
 
