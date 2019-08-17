@@ -60,7 +60,7 @@ bash -c "bundle install && bundle exec ruby app.rb -o 0.0.0.0"
 
 서버가 정상적으로 실행되었으면 웹 브라우저에서 테스트해보자. ``http://localhost:4567``
 
-![1566038223973](C:\Users\Daeun\AppData\Roaming\Typora\typora-user-images\1566038223973.png)
+<center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/local1.png?raw=true"></center> 
 
 도커 컨테이너의 호스트명을 확인할 수 있다! 이제 도커 이미지를 만들 준비가 되었다!!!!!!!
 
@@ -70,7 +70,7 @@ bash -c "bundle install && bundle exec ruby app.rb -o 0.0.0.0"
 
 <br>
 
-![1566038391340](C:\Users\Daeun\AppData\Roaming\Typora\typora-user-images\1566038391340.png)
+<center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/dockerfile.png?raw=true"></center> 
 
 도커는 이미지를 만들기 위해 `Dockerfile`이라는 이미지 빌드용 DSLDomain Specific Language 파일을 사용합니다. 단순 텍스트 파일로 일반적으로 소스와 함께 관리한다.
 
@@ -210,7 +210,7 @@ docker run -d -p 8081:4567 app
 docker run -d -p 8082:4567 app
 ```
 
-![1566039024520](C:\Users\Daeun\AppData\Roaming\Typora\typora-user-images\1566039024520.png)
+<center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/local2.png?raw=true"></center> 
 
 접속 성공입니다! 호스트 네임을 출력하는 웹서버를 3개나 만들 수 있습니다!!!
 
