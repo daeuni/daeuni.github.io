@@ -68,7 +68,6 @@ bash -c "bundle install && bundle exec ruby app.rb -o 0.0.0.0"
 
 **Ruby Application Dockerfile**
 
-<br>
 
 <center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/dockerfile.png?raw=true"></center> 
 
@@ -77,13 +76,14 @@ bash -c "bundle install && bundle exec ruby app.rb -o 0.0.0.0"
 고급 개발자는 바로 Dockerfile을 만들 수도 있겠지만, 일반 개발자들은 일단 리눅스 서버에서 테스트로 설치해보고 안 되면 될 때까지 최적의 과정을 Dockerfile로 작성해야 합니다. 
 
 우리는 초보이므로 Ruby 웹 애플리케이션을 ubuntu에 배포하는 과정을 먼저 살펴보겠다.
-
+<br>
+<hr>
 1. ubuntu설치
 2. ruby설치
 3. 소스 복사
 4. Gem 패키지 설치
 5. Sinatra 서버 실행
-
+<hr>
 이 과정을 그대로 쉘 스크립트로 옮겨보면 아래와 같다.
 
 ```shell
@@ -135,7 +135,6 @@ CMD    bundle exec ruby app.rb -o 0.0.0.0
 
 **Docker build**
 
-<br>
 
 이미지를 빌드하는 명령은 다음과 같다.
 
@@ -220,7 +219,6 @@ docker run -d -p 8082:4567 app
 
 **Build 분석**
 
-<br>
 
 도커는 Dockerfile을 가지고 어떻게 빌드를 하는 것인지! build 로그를 보면서 분석해볼 수 있다.
 
@@ -294,7 +292,7 @@ Dockerfile의 세 번째 명령어를 수행한다. 이전 단계와 마찬가�
 
 <br>
 
-결론적으로 도커 빌드는 `임시 컨테이너 생성` > `명령어 수행` > `이미지로 저장` > `임시 컨테이너 삭제` > `새로 만든 이미지 기반 임시 컨테이너 생성` > `명령어 수행` > `이미지로 저장` > `임시 컨테이너 삭제` > … 의 과정을 계속해서 반복한다고 볼 수 있습니다. 명령어를 실행할 때마다 이미지 레이어를 저장하고 다시 빌드할 때 Dockerfile이 변경되지 않았다면 기존에 저장된 이미지를 그대로 캐시처럼 사용한다.
+결론적으로 도커 빌드는 ``임시 컨테이너 생성`` > ``명령어 수행`` > ``이미지로 저장`` > ``임시 컨테이너 삭제`` > ``새로 만든 이미지 기반 임시 컨테이너 생성`` > ``명령어 수행`` > ``이미지로 저장`` > ``임시 컨테이너 삭제`` > … 의 과정을 계속해서 반복한다고 볼 수 있습니다. 명령어를 실행할 때마다 이미지 레이어를 저장하고 다시 빌드할 때 Dockerfile이 변경되지 않았다면 기존에 저장된 이미지를 그대로 캐시처럼 사용한다.
 
 이처럼 레이어 개념을 잘 이해하고 있으면 최적화된 이미지를 생성할 수 있다.
 
