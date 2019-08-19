@@ -135,7 +135,7 @@ RUN apt-get -y -qq update && \
 
 최종 Dockerfile은 아래와 같다.
 
-```doc
+```dockerfile
 FROM ruby:2.3
 MAINTAINER subicura@subicura.com
 COPY Gemfile* /usr/src/app/
@@ -158,7 +158,8 @@ CMD bundle exec ruby app.rb -o 0.0.0.0
 
 <center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/dockerregistry.png?raw=true"></center>
 
-도커는 빌드한 이미지를 서버에 배포하기 위해 직접 파일을 복사하는 방법 대신 [도커 레지스트리](https://docs.docker.com/registry/)Docker Registry라는 이미지 저장소를 사용한다. 도커 명령어를 이용하여 이미지를 레지스트리에 푸시push하고 다른 서버에서 풀pull받아 사용하는 구조다.  ~~git을 사용하는 느낌?~~
+도커는 빌드한 이미지를 서버에 배포하기 위해 직접 파일을 복사하는 방법 대신 [도커 레지스트리](https://docs.docker.com/registry/)Docker Registry라는 이미지 저장소를 사용한다. 도커 명령어를 이용하여 이미지를 레지스트리에 푸시push하고 다른 서버에서 풀pull받아 사용하는 구조다.
+
 
 도커 레지스트리는 [오픈소스](https://github.com/docker/distribution)로 무료로 설치할 수 있고 설치형이 싫다면 도커(Docker Inc.)에서 서비스 중인 [도커 허브](https://hub.docker.com/)Docker Hub를 사용할 수 있다.
 
