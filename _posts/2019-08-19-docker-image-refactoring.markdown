@@ -14,7 +14,7 @@ categories: Refactoring DockerHub
 
 <br>
 
-앞에서 만든 Ruby 애플리케이션 이미지는 `ubuntu`를 베이스로 만들었지만 사실 훨씬 간단한 `ruby` 베이스 이미지가 존재한다. 기존에 ruby를 설치했던 명령어는 ruby 이미지를 사용하는 것으로 간단하게 생략할 수 있다.
+앞에서 만든 Ruby 애플리케이션 이미지는 ``ubuntu``를 베이스로 만들었지만 사실 훨씬 간단한 ``ruby`` 베이스 이미지가 존재한다. 기존에 ruby를 설치했던 명령어는 ruby 이미지를 사용하는 것으로 간단하게 생략할 수 있다.
 
 ```shell
 # before
@@ -196,7 +196,7 @@ Password:
 Login Succeeded
 ```
 
-ID와 패스워드를 입력하면 로그인이 되고 `~/.docker/config.json`에 인증정보가 저장되어 로그아웃하기 전까지 로그인 정보가 유지된다.
+ID와 패스워드를 입력하면 로그인이 되고 ``~/.docker/config.json``에 인증정보가 저장되어 로그아웃하기 전까지 로그인 정보가 유지된다.
 
 <br>
 
@@ -210,7 +210,7 @@ ID와 패스워드를 입력하면 로그인이 되고 `~/.docker/config.json`�
 [Registry URL]/[사용자 ID]/[이미지명]:[tag]
 ```
 
-Registry URL은 기본적으로 도커 허브를 바라보고 있고 사용자 ID를 지정하지 않으면 기본값(library)을 사용한다. 따라서 `ubuntu` = `library/ubuntu` = `docker.io/library/ubuntu` 는 모두 동일한 표현이다.
+Registry URL은 기본적으로 도커 허브를 바라보고 있고 사용자 ID를 지정하지 않으면 기본값(library)을 사용한다. 따라서 ``ubuntu`` = ``library/ubuntu`` = ``docker.io/library/ubuntu`` 는 모두 동일한 표현이다.
 
 도커의 `tag`명령어를 이용하여 기존에 만든 이미지에 추가로 이름을 지어줄 수 있다.
 
@@ -224,7 +224,7 @@ docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 docker tag app subicura/sinatra-app:1
 ```
 
-`subicura`라는 ID를 사용하고 이미지 이름을 `sinatra-app`으로 변경했다. 첫 번째 버전이므로 태그는 `1`을 사용한다. 이제 `push`명령을 이용해 도커 허브에 이미지를 전송해 보자.
+``subicura``라는 ID를 사용하고 이미지 이름을 ``sinatra-app``으로 변경했다. 첫 번째 버전이므로 태그는 ``1``을 사용한다. 이제 ``push``명령을 이용해 도커 허브에 이미지를 전송해 보자.
 
 ```shell
 docker push subicura/sinatra-app:1
@@ -249,7 +249,7 @@ af605e724c5a: Mounted from library/ubuntu
 
 성공적으로 이미지를 도커 허브에 푸시하였습니다. 도커 허브에 저장된 50만 개의 이미지에 새로운 이미지가 하나 추가되었다!
 
-이제 어디서든 `subicura/sinatra-app:1`이미지를 사용할 수 있다.
+이제 어디서든 ``subicura/sinatra-app:1``이미지를 사용할 수 있다.
 
 <br>
 
