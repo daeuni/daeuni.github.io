@@ -156,7 +156,7 @@ CMD bundle exec ruby app.rb -o 0.0.0.0
 
 <br>
 
-![1566179710721](C:\Users\Daeun\AppData\Roaming\Typora\typora-user-images\1566179710721.png)
+<center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/dockerregistry.png?raw=true"></center>
 
 도커는 빌드한 이미지를 서버에 배포하기 위해 직접 파일을 복사하는 방법 대신 [도커 레지스트리](https://docs.docker.com/registry/)Docker Registry라는 이미지 저장소를 사용한다. 도커 명령어를 이용하여 이미지를 레지스트리에 푸시push하고 다른 서버에서 풀pull받아 사용하는 구조다.  ~~git을 사용하는 느낌?~~
 
