@@ -14,7 +14,7 @@ categories: Refactoring DockerHub
 
 <br>
 
-앞에서 만든 Ruby 애플리케이션 이미지는 ``ubuntu``를 베이스로 만들었지만 사실 훨씬 간단한 ``ruby`` 베이스 이미지가 존재한다. 기존에 ruby를 설치했던 명령어는 ruby 이미지를 사용하는 것으로 간단하게 생략할 수 있다.
+앞에서 만든 Ruby 애플리케이션 이미지는 ```ubuntu```를 베이스로 만들었지만 사실 훨씬 간단한 ``ruby`` 베이스 이미지가 존재한다. 기존에 ruby를 설치했던 명령어는 ruby 이미지를 사용하는 것으로 간단하게 생략할 수 있다.
 
 ```shell
 # before
