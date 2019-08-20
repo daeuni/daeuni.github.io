@@ -135,7 +135,7 @@ base 이미지에 소스파일과 php custom 설정파일을 추가함
 
 <br>
 
-이미지를 만들었으니 사실상 90% 작업은 완료되었습니다. 이제 생성된 이미지를 컨테이너로 실행만 하면 된다.
+이미지를 만들었으니 사실상 90% 작업은 완료되었다. 이제 생성된 이미지를 컨테이너로 실행만 하면 된다.
 
 <center><img src="https://github.com/daeuni/daeuni.github.io/blob/master/assets/hscontainer.png?raw=true"></center> 
 
@@ -328,6 +328,7 @@ docker tag -f ${DOCKER_REGISTRY_NAME}-app:$COMMIT_HASH ${DOCKER_REGISTRY_NAME}-a
 
 jenkins에서 이미지를 빌드할때 현재 `git commit hash`로 태그로 만든다. 그리고 해당 이미지를 다시 배포하려면 해당 git commit hash를 latest로 태그한 후 다시 배포하면 된다.
 
+<br>
 <hr>
 
 다음 포스트에는 도커 스웜을 활용한 애플리케이션 개발을 해보겠다.
