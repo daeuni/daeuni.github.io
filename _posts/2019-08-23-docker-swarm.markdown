@@ -20,7 +20,7 @@ categories: swarm cluster manager worker
 
 <br>
 
-<center><img src="https://subicura.com/assets/article_images/2017-02-25-container-orchestration-with-docker-swarm/container-orchestration.png" width=450 height=450></center> 
+<center><img src="https://subicura.com/assets/article_images/2017-02-25-container-orchestration-with-docker-swarm/container-orchestration.png"></center> 
 
 서버 오케스트레이션은 여러대의 서버와 여러개의 서비스를 편리하게 관리해주는 작업이라고 할 수 있다. 실제로는 스케줄링scheduling, 클러스터링clustering, 서비스 디스커버리service discovery, 로깅logging, 모니터링monitoring 같은 일을 한다.
 
