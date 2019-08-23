@@ -234,11 +234,13 @@ Docker 1.13을 기준으로 어떤 기능을 제공하는지 하나하나 살펴
 
 가상머신을 만드는 방법은 다음과 같다.
 
+<hr>
 1. virtual box 설치 [다운로드](https://www.virtualbox.org/)
 2. Vagrant 설치 [다운로드](https://www.vagrantup.com/downloads.html)
 3. [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater) plugin 설치 `vagrant plugin install vagrant-hostsupdater`
 4. 데모 파일 다운로드 [GitHub - docker swarm demo](https://github.com/subicura/docker-swarm-demo)
 5. 가상머신 생성 데모 디렉토리에서 `vagrant up` 명령어 실행 -> 자동으로 생성!
+<hr>
 
 가상머신이 정상적으로 생성되었는지 확인하려면 `vagrant status`, 가상머신을 삭제하려면 `vagrant destroy` 를 실행한다. 가상머신에 접속하는 명령어는 `vagrant ssh [가상머신이름]`이다.
 
