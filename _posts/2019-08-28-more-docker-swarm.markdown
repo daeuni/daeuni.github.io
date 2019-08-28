@@ -6,7 +6,9 @@ date:   2019-08-28 10:00:36
 categories: ingress dns loadbalancer
 
 ---
+이전 포스트에서 서버의 hostname을 출력하는 서비스를 클러스터에 만들고 curl 테스트를 통해 클러스터 내부에 있는 모든 노드에서 정상적으로 응답했던 것을 확인했다.
 
+어떻게 이것이 가능했던 일인지 다음 내용을 통해 살펴보자.
 <br>
 
 **Ingress Network**
