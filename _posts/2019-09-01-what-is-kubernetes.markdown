@@ -7,23 +7,17 @@ categories: ingress dns loadbalancer
 
 ---
 
-<center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/kubernetes-logo.png"></center>
-
-<br>
-
-**쿠버네티스는 컨테이너를 쉽고 빠르게 배포/확장하고 관리를 자동화해주는 오픈소스 플랫폼입니다.**
+쿠버네티스는 컨테이너를 쉽고 빠르게 배포/확장하고 관리를 자동화해주는 오픈소스 플랫폼입니다.
 
 단순한 컨테이너 플랫폼이 아닌 마이크로서비스, 클라우드 플랫폼을 지향하고 컨테이너로 이루어진 것들을 손쉽게 담고 관리할 수 있는 그릇 역할을 합니다. 서버리스, CI/CD, 머신러닝 등 다양한 기능이 쿠버네티스 플랫폼 위에서 동작합니다.
 
+<center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/kubernetes-logo.png"></center>
 <br>
-
 **특징**
 
 <br>
 
 1> ECO System
-
-<br>
 
 <center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/cncf-map.png"></center>
 
@@ -32,8 +26,6 @@ categories: ingress dns loadbalancer
 <br>
 
 2> 다양한 배포 방식
-
-<br>
 
 <center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/workload.png"></center>
 
@@ -51,8 +43,6 @@ StatefulSets은 실행 순서를 보장하고 호스트 이름과 볼륨을 일�
 
 3> Ingress 설정
 
-<br>
-
 <center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/ingress.png"></center>
 
 다양한 웹 애플리케이션을 하나의 로드 밸런서로 서비스하기 위해 Ingress기능을 제공합니다. 
@@ -67,8 +57,6 @@ StatefulSets은 실행 순서를 보장하고 호스트 이름과 볼륨을 일�
 
 3> Cloud 지원
 
-<br>
-
 <center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/cloud-company.png"></center>
 
 쿠버네티스는 부하에 따라 자동으로 서버를 늘리는 기능 AutoScaling이 있고 IP를 할당받아 로드밸런스LoadBalancer로 사용할 수 있습니다. 
@@ -79,8 +67,6 @@ StatefulSets은 실행 순서를 보장하고 호스트 이름과 볼륨을 일�
 
 4> Namespace & Label
 
-<br>
-
 <center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/namespace-label.png"></center>
 
 하나의 클러스터를 논리적으로 구분하여 사용할 수 있습니다. 하나의 클러스터에 다양한 프레임워크와 애플리케이션을 설치하기 때문에 기본(`system`, `default`)외에 여러 개의 네임스페이스를 사용하는 것이 일반적입니다. 더 세부적인 설정으로 라벨 기능을 적극적으로 사용하여 유연하면서 확장성 있게 리소스를 관리할 수 있습니다.
@@ -88,8 +74,6 @@ StatefulSets은 실행 순서를 보장하고 호스트 이름과 볼륨을 일�
 <br>
 
 5> RBAC (role-based access control)
-
-<br>
 
 <center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/rbac.png"></center>
 
@@ -213,6 +197,7 @@ spec:
 
 어쩌다 이렇게 되었을까.. 관리가 쉬워지면서 일자리가 없어지는 걸 걱정한 서버 관리자의 고도의 전략인가 잘 짜인 설계 문제인가. 
 
+<br>
 <hr>
 
 다음 포스트에는 쿠버네티스의 개념을 어떻게 구현했는지 구체적인 아키텍처를 살펴보겠습니다.
