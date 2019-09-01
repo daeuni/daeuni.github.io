@@ -15,8 +15,6 @@ categories: orchestration
 <br>
 **특징**
 
-<br>
-
 1> ECO System
 
 <center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/cncf-map.png"></center>
@@ -66,7 +64,6 @@ StatefulSets은 실행 순서를 보장하고 호스트 이름과 볼륨을 일�
 <br>
 
 4> Namespace & Label
-
 <center><img src="https://subicura.com/assets/article_images/2019-05-19-kubernetes-basic-1/namespace-label.png"></center>
 
 하나의 클러스터를 논리적으로 구분하여 사용할 수 있습니다. 하나의 클러스터에 다양한 프레임워크와 애플리케이션을 설치하기 때문에 기본(`system`, `default`)외에 여러 개의 네임스페이스를 사용하는 것이 일반적입니다. 더 세부적인 설정으로 라벨 기능을 적극적으로 사용하여 유연하면서 확장성 있게 리소스를 관리할 수 있습니다.
