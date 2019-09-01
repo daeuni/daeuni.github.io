@@ -3,7 +3,7 @@ layout: post
 title:  "What is kubernetes?"
 description: open-source container-orchestration system
 date:   2019-09-01 10:00:36
-categories: ingress dns loadbalancer
+categories: orchestration
 
 ---
 
