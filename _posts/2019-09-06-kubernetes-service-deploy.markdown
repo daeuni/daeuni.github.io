@@ -163,7 +163,7 @@ gloud와 kubectl를 설치한 후에 쿠버네티스 클러스터 인증 정보�
 여기서는 도커 이미지를 구글 클라우드내의 도커 컨테이너 레지스트리에 등록한 후, 이 이미지를 이용하여 ReplicationController를 통해 총 3개의 Pod를 구성하고 서비스를 만들어서 이 Pod들을 외부 IP를 이용하여 서비스를 제공할 것이다. 
 
 
-
+<br>
 **도커 컨테이너 이미지 등록하기**
 
 먼저 앞에서 만든 도커 이미지를 구글 클라우드 컨테이너 레지스트리(Google Container Registry 이하 GCR) 에 등록해보자. 
@@ -263,9 +263,9 @@ kubectl exec 명령을 이용하면 쉘 명령어를 실행할 수 있는데, �
 
 <center><img src = "https://t1.daumcdn.net/cfile/tistory/9953853D5B25C3AE31"></center>
 
-<br>
 
-**Service 등록 !**
+
+**Service 등록 **
 
 rc와 pod 생성이 끝났으면 이제 서비스를 생성해서 pod들을 외부 ip로 서비스 해보자
 
@@ -343,7 +343,7 @@ kubectl scale --replicas=[pod의 수] rc/[rc 명] 식으로 사용하면 된다.
 삭제시 주의할점은 pod를 삭제하기 전에 먼저 rc를 삭제해야 한다. 아니면, pod가 삭제된 후 rc에 의해서 다시 새로운 pod가 생성될 수 있다. 
 
 
-
+<br>
 <hr>
 
 <br>
