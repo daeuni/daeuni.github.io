@@ -320,7 +320,7 @@ rc는 pod의 상태를 체크하다가 문제가 있으면 다시, pod를 기동
 
 <center><img src = "https://t1.daumcdn.net/cfile/tistory/99EA15495B25C3AE0B"></center>
 
-<br>
+
 
 운영중에 탄력적으로 pod의 개수를 조정할 수 있는데, kubectl scale 명령을 이용하면 된다.
 
