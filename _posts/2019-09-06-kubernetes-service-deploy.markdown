@@ -265,7 +265,7 @@ kubectl exec 명령을 이용하면 쉘 명령어를 실행할 수 있는데, �
 
 
 
-**Service 등록 **
+**Service 등록**
 
 rc와 pod 생성이 끝났으면 이제 서비스를 생성해서 pod들을 외부 ip로 서비스 해보자
 
