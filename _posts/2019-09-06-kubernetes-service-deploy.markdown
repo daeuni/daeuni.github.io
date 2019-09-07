@@ -17,6 +17,8 @@ node.js로 간단한 웹서버를 만들어 도커로 패키징을 진행한다.
 
 여기서 사용한 실습 환경은 node.js carbon 버전 (8.11.3), 도커 맥용 18.05.0-ce, build f150324 을 사용하였다.
 
+<br>
+
 **[1] node.js Application 준비**
 
 server.js라는 이름으로 아래 코드를 작성한다.
