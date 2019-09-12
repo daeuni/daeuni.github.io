@@ -6,7 +6,7 @@ categories: pod loadbalancing dns
 
 ---
 
-Pod의 경우에 지정되는 Ip가 랜덤하게 지정이 되고 리스타트 때마다 변하기 때문에 고정된 엔드포인트로 호출이 어렵다.
+Pod의 경우에 지정되는 Ip가 랜덤하게 지정이 되고 restart 때마다 변하기 때문에 고정된 엔드포인트로 호출이 어렵다.
 
 또한 여러 Pod에 같은 애플리케이션을 운용할 경우 이 Pod 간의 로드밸런싱을 지원해줘야 하는데, 서비스가 이러한 역할을 한다.
 
@@ -153,7 +153,7 @@ spec:
 
 <br>
 
-**External Name**
+[4]External Name
 
 ExternalName은 외부 서비스를, 쿠버네티스 내부에서 호출할 때 사용한다. 
 
