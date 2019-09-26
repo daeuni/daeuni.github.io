@@ -9,7 +9,7 @@ date:   2019-09-26 10:00:36
 
 이러한 기능을 Health Check라고 하는데 크게 두 가지 방법이 있다.
 
-컨테이너가 살아 있는지 아닌지를 체크하는 방법이 Liveness probe, 그리고 컨테이너가 서비스가 가능한 상태인지를 체크하는 방법을 Readiness probe 라고 한다
+컨테이너가 살아 있는지 아닌지를 체크하는 방법이 Liveness probe, 그리고 컨테이너가 서비스가 가능한 상태인지를 체크하는 방법을 Readiness probe 라고 한다.
 
 <br>
 
