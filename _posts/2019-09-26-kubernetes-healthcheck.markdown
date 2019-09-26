@@ -353,6 +353,7 @@ Readiness probe가 실패한 readiness-rc-5v64f 의 상태가 Running이기는 �
 <center><img src = "https://t1.daumcdn.net/cfile/tistory/99071D425B2FA1AE14"></center>
 
   모든 호출이 readiness-rc-5v64f 로 가지않고, 하나 남은 정상적인 Pod인 readiness-rc-89d89 로만 가는 것을 확인할 수 있다.  
+<br>
 
 <hr>
 
