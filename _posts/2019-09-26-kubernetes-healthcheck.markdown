@@ -24,7 +24,7 @@ Liveness probe와 readiness probe는 컨테이너가 정상적인지 아닌지�
 그럼 각각에 대해서 살펴보자.
 
 
-
+<br>
 **[1] Command probe**
 
   Command probe는 컨테이너의 상태 체크를 쉘 명령을 수행하고 나서, 그 결과를 가지고 컨테이너의 정상여부를 체크한다. 
