@@ -205,7 +205,7 @@ edit 명령은 리소스의 설정 정보를 kubectl 이 설치되어 있는 머
 
 <br>
 
-**[1] kubectl patch**
+**[2] kubectl patch**
 
 patch 명령은 파일 업데이트 없이 기존 리소스의 설정 정보 중 여러개의 필드를 수정하고자 하는데 이용한다.
 
