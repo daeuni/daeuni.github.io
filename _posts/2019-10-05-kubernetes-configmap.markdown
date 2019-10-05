@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kubernetes: ConfigMap"
-date:   2019-09-30 10:00:36
+date:   2019-10-05 10:00:36
 
 ---
 
